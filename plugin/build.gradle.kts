@@ -1,7 +1,7 @@
 plugins {
     `kotlin-dsl`
     `maven-publish`
-    `signing`
+//    `signing`
     alias(libs.plugins.detekt)
     alias(libs.plugins.pluginPublish)
     alias(libs.plugins.bintray)
@@ -10,8 +10,8 @@ plugins {
 }
 
 apply(from = "$projectDir/config/maven-publish.gradle")
-apply(from = "$projectDir/config/bintray-publish.gradle")
-apply(from = "$projectDir/config/gradle-portal.gradle")
+//apply(from = "$projectDir/config/bintray-publish.gradle")
+//apply(from = "$projectDir/config/gradle-portal.gradle")
 
 detekt {
 
